@@ -21,12 +21,6 @@ const ShoppingCart: React.FC = () => {
   const [couponCode, setCouponCode] = useState("");
   const [discount, setDiscount] = useState(0);
 
-  const handleQuantityChange = (index: number, newQuantity: number) => {
-    const updatedItems = cartItems.map((item, i) =>
-      i === index ? { ...item, quantity: newQuantity } : item
-    );
-    setCartItems(updatedItems);
-  };
 
   const handleRemoveItem = (index: number) => {
     setCartItems(cartItems.filter((_, i) => i !== index));
