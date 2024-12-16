@@ -93,6 +93,12 @@ export default function Header() {
             </div>
           </form>
           <Image src={handbag} alt="Handbag Icon" className="w-6 h-6" />
+             <a href="/signup">
+        <Image src={user} alt="User Icon" className="w-6 h-6" />
+        </a>
+        <a href="/cart">
+        <Image src={handbag} alt="Handbag Icon" className="w-6 h-6" />
+        </a>
         </div>
       </div>
 
